@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JPP LLM Evaluation</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Link to your CSS file -->
+  </head>
+  <body>
+    <div class="container">
+      <h1>JPP LLM Evaluation</h1>
+      <form id="evaluationForm">
+        <div class="input-group">
+          <label for="firstName">First Name:</label>
+          <input type="text" id="firstName" name="firstName" required />
+        </div>
+        <div class="input-group">
+          <label for="lastName">Last Name:</label>
+          <input type="text" id="lastName" name="lastName" required />
+        </div>
+        <div class="input-group">
+          <label>Are you a SME (Subject Matter Expert)?</label>
+          <div>
+              <button type="button" id="smeYes" class="sme-button">Yes</button>
+              <button type="button" id="smeNo" class="sme-button">No</button>
+          </div>
+      </div>
+      
+        <div class="input-group">
+          <label for="rank">Rank (if applicable):</label>
+          <input type="text" id="rank" name="rank" />
+        </div>
+        <button type="submit" id="continueButton">Continue</button>
+      </form>
+    </div>
+  </body>
+  <script src="main.js"></script>
+
+</html>

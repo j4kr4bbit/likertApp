@@ -1,0 +1,139 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.input-group input[type="text"] {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.sme-button {
+  background-color: white;
+  color: black;
+  padding: 10px 20px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-right: 5px;
+  cursor: pointer; /* Makes sure the mouse cursor changes to a hand icon on hover */
+}
+
+.sme-button:hover {
+  background-color: #f0f0f0;
+}
+
+.sme-button.selected {
+  background-color: #007bff;
+  color: white;
+}
+
+button, .sme-button {
+  background-color: #4CAF50; /* Default button color */
+  color: white;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover, .sme-button:hover {
+  background-color: #45a049; /* Darker shade for hover state */
+}
+
+
+.instructions-box {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 20px; /* Adjusts spacing between the instructions box and the buttons */
+  max-height: 300px; /* Set maximum height */
+  overflow-y: auto; /* Enables scroll if content is too long */
+}
+.feedback-section {
+  margin-top: 20px;
+}
+
+.rating-section, .input-group {
+  margin-bottom: 20px;
+}
+
+h1 {
+  text-align: center; /* Center the text within the element */
+  width: 100%; /* Full width to ensure center alignment */
+  margin: 0 auto; /* Apply auto margins to center the block itself, if needed */
+  padding: 10px 0; /* Optional: add some padding for spacing */
+}
+.feedback-section {
+  width: 90%; /* Or max-width: 600px; or whatever width your container has if you want to match it */
+  margin: 20px auto; /* This centers the feedback section */
+  padding: 20px;
+  /* other styles */
+}
+
+
+.feedback-section, .rating-section, .input-group {
+  text-align: center; /* Center the text for these sections */
+}
+
+/* If you have specific items like buttons or input fields you want to center: */
+.feedback-section button, .feedback-section input[type='radio'], .feedback-section textarea {
+  display: block; /* Make these elements block-level */
+  margin: 0 auto; /* Center these elements within their container */
+  /* Adjust width as necessary, particularly for the textarea */
+}
+
+.rating-circles {
+  margin: 0 auto; /* Center the rating circles container */
+  display: flex; /* Use flexbox to line up the radio buttons horizontally */
+  justify-content: center; /* Center the flex items (the radio buttons and their labels) */
+}
+
+.rating-circles {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Adjust the space between each rating option */
+}
+
+.rating-option {
+  text-align: center; /* Center the text label above the radio button */
+}
+
+/* Optional: If you want to vertically align the text with the radio buttons */
+.rating-option label {
+  display: block; /* Ensure the label takes up the full width of its container */
+  margin-bottom: 5px; /* Space between the label and the radio button */
+}
+
+.rating-option input[type="radio"] {
+  display: block; /* Make radio buttons display as block to align under the text */
+}
+
+
+.bottom-left {
+    position: fixed; /* Fix position to the viewport */
+    left: 20px; /* Distance from the left */
+    bottom: 20px; /* Distance from the bottom */
+    padding: 10px 20px; /* Optional: Adjust padding */
+    /* Other styling like background-color, color, etc., as needed */
+}

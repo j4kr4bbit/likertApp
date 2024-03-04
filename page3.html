@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Large Language Model Response</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+    <h1>Large Language Model Response</h1>
+    <div class="container">
+        <div class="response-box">
+            <!-- Insert the response of the language model here -->
+            <p>This is where the response from the Large Language Model will be displayed...</p>
+        </div>
+    </div>
+    <div class="feedback-section">
+        <div class="rating-section">
+            <label>Rate the instructions seen above:</label>
+            <div class="rating-circles">
+                <div class="rating-option">
+                    <label for="veryPoor">Very Poor</label>
+                    <input type="radio" id="veryPoor" name="rating" value="veryPoor">
+                </div>
+                <div class="rating-option">
+                    <label for="poor">Poor</label>
+                    <input type="radio" id="poor" name="rating" value="poor">
+                </div>
+                <div class="rating-option">
+                    <label for="neutral">Neutral</label>
+                    <input type="radio" id="neutral" name="rating" value="neutral">
+                </div>
+                <div class="rating-option">
+                    <label for="good">Good</label>
+                    <input type="radio" id="good" name="rating" value="good">
+                </div>
+                <div class="rating-option">
+                    <label for="veryGood">Very Good</label>
+                    <input type="radio" id="veryGood" name="rating" value="veryGood">
+                </div>
+            </div>
+        </div>
+        <div class="input-group">
+            <label for="relevantActors">Relevant Actors:</label>
+            <textarea id="relevantActors" name="relevantActors"></textarea>
+        </div>
+        <button id="backButton" class="bottom-left">Back</button>
+        <button id="continueButton">Submit</button>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
